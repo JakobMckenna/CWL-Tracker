@@ -14,12 +14,20 @@ struct ContentView: View {
             Color(.black)
                 .ignoresSafeArea()
             
-            Text("CWL Tracker")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .foregroundColor(Color.red)
-                .multilineTextAlignment(.center)
-                .padding()
+            VStack {
+                Text("CWL Tracker")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.orange)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    
+                Image("Trophy")
+                
+                Button("Link your account") {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                }
+            }
         }
         
     }
