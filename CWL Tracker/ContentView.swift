@@ -36,7 +36,19 @@ struct ContentView: View {
                 }
                 
                 Button(action: {
-                    //logic
+                    var clanInput = clanTag
+
+                    //check and/or add # before the clan tag
+                    if (clanInput.contains("#")) {
+                        //we are go to go
+                    }
+                    else {
+                        //add # at the start
+                        clanInput = "#" + clanInput
+                    }
+                    //eventually we will do api call here
+                    print(clanInput)
+                     
                 }){
                     Text("Link clan")
                         .foregroundColor(.black)
