@@ -40,7 +40,7 @@ struct ContentView: View {
 
                     //check and/or add # before the clan tag
                     if (clanInput.contains("#")) {
-                        //we are go to go
+                        //we are good to go
                     }
                     else {
                         //add # at the start
@@ -57,6 +57,7 @@ struct ContentView: View {
                 }
                 .background(Color.orange)
                 .clipShape(Capsule())
+                
             }
         }
         

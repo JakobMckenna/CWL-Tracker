@@ -11,6 +11,7 @@
 		6FC235C42B3F33D1001A00B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC235C32B3F33D1001A00B8 /* ContentView.swift */; };
 		6FC235C62B3F33D3001A00B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC235C52B3F33D3001A00B8 /* Assets.xcassets */; };
 		6FC235C92B3F33D3001A00B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC235C82B3F33D3001A00B8 /* Preview Assets.xcassets */; };
+		6FC235EC2B3F6CA0001A00B8 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC235EB2B3F6CA0001A00B8 /* ContentView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6FC235C82B3F33D3001A00B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6FC235CE2B3F33D3001A00B8 /* CWL TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CWL TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC235D82B3F33D3001A00B8 /* CWL TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CWL TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC235EB2B3F6CA0001A00B8 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				6FC235C12B3F33D1001A00B8 /* CWL_TrackerApp.swift */,
 				6FC235C32B3F33D1001A00B8 /* ContentView.swift */,
+				6FC235EB2B3F6CA0001A00B8 /* ContentView2.swift */,
 				6FC235C52B3F33D3001A00B8 /* Assets.xcassets */,
 				6FC235C72B3F33D3001A00B8 /* Preview Content */,
 			);
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC235EC2B3F6CA0001A00B8 /* ContentView2.swift in Sources */,
 				6FC235C42B3F33D1001A00B8 /* ContentView.swift in Sources */,
 				6FC235C22B3F33D1001A00B8 /* CWL_TrackerApp.swift in Sources */,
 			);
