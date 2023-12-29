@@ -9,8 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Bye, world!")
-            .padding()
+        
+        ZStack {
+            Color(.black)
+                .ignoresSafeArea()
+            
+            Text("CWL Tracker")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .foregroundColor(Color.red)
+                .multilineTextAlignment(.center)
+                .padding()
+        }
+        
     }
 }
 
