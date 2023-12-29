@@ -25,16 +25,26 @@ struct ContentView: View {
                     .padding()
                 Image("Trophy")
                 
-                Text("Link your clan:")
+                Text("Enter your clan tag:")
                     .font(.title)
                 
                 HStack {
-                    TextField("Enter your clan tag", text: $clanTag)
+                    TextField("clan tag", text: $clanTag)
                         .textFieldStyle(.roundedBorder)
                         .padding()
     
                 }
                 
+                Button(action: {
+                    //logic
+                }){
+                    Text("Link clan")
+                        .foregroundColor(.black)
+                        .padding(.vertical, 10)
+                        .frame(width: 200)
+                }
+                .background(Color.orange)
+                .clipShape(Capsule())
             }
         }
         
