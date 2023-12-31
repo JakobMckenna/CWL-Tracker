@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContentView2: View {
+    @Binding var clanTag: String
+
    var body: some View {
-       Text("Hello")
+       Text("Hello, " + clanTag)
    }
 }
-
+      
 struct ContentView2_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView2()
+        ContentView2(clanTag: .constant("exampleClanTag"))
     }
 }

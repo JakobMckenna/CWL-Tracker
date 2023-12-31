@@ -35,19 +35,18 @@ struct ContentView: View {
                             .padding()
                     }
                     
-                    NavigationLink(destination: ContentView2(), tag: "A", selection: $selection) {}
+                    NavigationLink(destination: ContentView2(clanTag: self.$clanTag), tag: "A", selection: $selection) {}
                         Button(action: {
-                            var clanInput = clanTag
                             //check and/or add # before the clan tag
-                            if (clanInput.contains("#")) {
+                            if (clanTag.contains("#")) {
                                 //we are good to go
                             }
                             else {
                                 //add # at the start
-                                clanInput = "#" + clanInput
+                                clanTag = "#" + clanTag
                             }
                             //eventually we will do api calls here
-                            print(clanInput)
+                            print(clanTag)
                             selection = "A"
                         }){
                             Text("Link clan")
@@ -58,10 +57,9 @@ struct ContentView: View {
                         .background(Color.orange)
                         .clipShape(Capsule())
                         }
-                }
-          }
-        
-     }
+            }
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
