@@ -11,7 +11,15 @@ struct ContentView2: View {
     @Binding var clanTag: String
 
    var body: some View {
-       Text("Hello, " + clanTag)
+       
+       ZStack {
+           Color(red: 0.9, green: 0.45, blue: 0)
+               .ignoresSafeArea()
+           
+           Text("Hello, " + clanTag)
+           
+           
+       }
    }
 }
       
