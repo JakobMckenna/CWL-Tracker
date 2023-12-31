@@ -4,10 +4,7 @@
 //
 //  Created by Jakob McKenna on 2023-12-29.
 //
-
 import SwiftUI
-
-
 
 struct ContentView: View {
     @State var clanTag: String = ""
@@ -26,6 +23,7 @@ struct ContentView: View {
                         .foregroundColor(Color(hue: 0.111, saturation: 1.0, brightness: 1.0))
                         .multilineTextAlignment(.center)
                         .padding()
+                    
                     Image("Trophy")
                     
                     Text("Enter your clan tag:")
@@ -35,13 +33,11 @@ struct ContentView: View {
                         TextField("clan tag", text: $clanTag)
                             .textFieldStyle(.roundedBorder)
                             .padding()
-        
                     }
                     
                     NavigationLink(destination: ContentView2(), tag: "A", selection: $selection) {}
                         Button(action: {
                             var clanInput = clanTag
-
                             //check and/or add # before the clan tag
                             if (clanInput.contains("#")) {
                                 //we are good to go
@@ -50,10 +46,9 @@ struct ContentView: View {
                                 //add # at the start
                                 clanInput = "#" + clanInput
                             }
-                            //eventually we will do api call here
+                            //eventually we will do api calls here
                             print(clanInput)
                             selection = "A"
-                             
                         }){
                             Text("Link clan")
                                 .foregroundColor(.black)
@@ -63,11 +58,10 @@ struct ContentView: View {
                         .background(Color.orange)
                         .clipShape(Capsule())
                         }
-                    
-            }
-        }
+                }
+          }
         
-    }
+     }
 }
 
 struct ContentView_Previews: PreviewProvider {
